@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int mcount,ccount;
+    private int mcount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,17 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void plus(View view){
-
+    //足す
         mcount++;
         TextView countView=(TextView)findViewById(R.id.textView1);
         countView.setText(String.valueOf(mcount));
     }
     public void clear(View view){
-        ccount=0;
+        //0にする
+        mcount=0;
         TextView countView=(TextView)findViewById(R.id.textView1);
-        countView.setText(String.valueOf(ccount));
+        countView.setText(String.valueOf(mcount));
     }
-    //testaaaaa
+
 
 
 }
