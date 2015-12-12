@@ -7,9 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.t_robop.otaka.myapplicationcount.MainActivity">
+    tools:context="com.t_robop.otaka.myapplicationcount.MainActivity"
+    android:background="#000000">
+    <!--色変えた-->
 
     <TextView
+        android:background="#0b0a0a"
+        android:textColor="#fbfbfc"
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,5 +41,7 @@
         android:text="Clear"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
 </RelativeLayout>
